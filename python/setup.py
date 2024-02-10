@@ -153,7 +153,7 @@ if sys.platform.startswith("linux") and platform.machine() in (
     long_description += ("\n\nThis wheel only contains CPU functionality. "
                          "Use the open3d wheel for full functionality.")
     classifiers.remove("Environment :: GPU :: NVIDIA CUDA")
-
+print(f"Packages : {find_packages()}")
 setup_args = dict(
     name=name,
     version="@PROJECT_VERSION@",
